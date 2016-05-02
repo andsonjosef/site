@@ -1,0 +1,24 @@
+#servicos{
+	> #servicos_itens{	
+		> .servicos_item{
+			@include make-xs-column(12);
+			@include make-sm-column(6);
+			@include make-md-column(3);
+			
+			cursor: pointer;
+			min-height: 150px;
+			background-color: #ccc;
+			background-clip: content-box;
+			margin-bottom: 30px;
+
+			&:hover{
+				background-color: $heading_tarja_color;	
+
+			}
+			&, &:hover{
+				transition: background 0.5s linear;
+			}
+		}
+
+	}
+}
