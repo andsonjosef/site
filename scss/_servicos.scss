@@ -10,7 +10,35 @@
 			background-color: #ccc;
 			background-clip: content-box;
 			margin-bottom: 30px;
-
+			> a{
+				display:block;
+				height:150px;
+				width: 100%;
+				text-align: center;
+				
+				> span{
+					display: inline-block;
+					position: relative;
+					@extend .sprite-servicos;
+					&.config{
+						@include sprite-define(70px,70px,-5px,-129px);
+						top: (150px-70)/2;
+					}
+					&.camera{
+						@include sprite-define(70px,52px,-5px,-5px);
+						top: (150px-52)/2;
+					}
+					&.image{
+						@include sprite-define(70px,66px,-5px, -289px);
+						top: (150px-66)/2;
+					}
+					&.pc{
+						@include sprite-define(70px,62px,-5px, -441px);
+						top: (150px-62)/2;
+					}
+					
+				}
+			}
 			&:hover{
 				background-color: $heading_tarja_color;	
 
