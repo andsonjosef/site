@@ -9,8 +9,11 @@ a{
 
 }
 .container{
-	 .heading{
+	 .heading,
+		.widget{
+
 		
+		>h3,
 		> h2{
 			margin:0 0 30px;
 			font:bold 18px $font_main;
@@ -26,6 +29,7 @@ a{
 				position: absolute;
 				top: 0;
 				left: 0;
+			
 			}
 		}
 	}
