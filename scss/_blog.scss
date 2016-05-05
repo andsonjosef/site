@@ -1,0 +1,15 @@
+#blog{
+	#posts{
+		@include make-xs-column(12);
+		@include make-sm-column(6);
+		@include make-sm-column(9);
+
+	}
+	#sidebar{
+		@include make-xs-column(12);
+		@include make-sm-column(5);
+		@include make-sm-column(3);
+
+			
+	}
+}
