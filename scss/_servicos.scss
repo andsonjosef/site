@@ -10,13 +10,16 @@
 			background-color: #ccc;
 			background-clip: content-box;
 			margin-bottom: 30px;
+			
 			> a{
+
 				display:block;
 				height:150px;
 				width: 100%;
 				text-align: center;
 				position: relative;
 				>span.title{
+
 					color:#fff;
 					font: 26px $font_main;
 					position: absolute;

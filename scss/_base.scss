@@ -6,15 +6,11 @@ a{
 }
 .content{
 @include make-row;
-
 }
 .container{
 	 .heading,
-		.widget{
-
-		
-		>h3,
-		> h2{
+	  .widget > .widget-title{
+			
 			margin:0 0 30px;
 			font:bold 18px $font_main;
 			color:$heading_color;
@@ -28,14 +24,28 @@ a{
 				background: $heading_tarja_color;
 				position: absolute;
 				top: 0;
-				left: 0;
-			
+				left: 15px;
 			}
 		}
-	}
+
+		.heading{
+			@include make-md-column(12);
+			
+				
+		}
+
+		.widget > .widget-title{
+			span{
+				left: 0;
+			}
+			
+				padding-left: 5px;
+			
+		}
 }
+
+
 .sprite-servicos{
 	background-image: url('../imagem/spriteServicos.png');
-	background-repeat: no-repeat;
-	
+	background-repeat: no-repeat;	
 }
