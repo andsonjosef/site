@@ -1,0 +1,65 @@
+body{
+	> footer{
+		background: #333;
+		padding: 20px 0 95px;
+
+		#footer-sidebar{
+			> .footer-widget{
+				@include make-xs-column(12);
+				@include make-sm-column(4);
+				@include make-md-column(4);
+				> h4.widget_title{
+					position:relative;
+					margin: 12px 0;
+					height: 36px;	
+					font: 22px $font_main;
+					color: #fff;
+					text-indent:12px;
+					padding-top: 3px;
+					> span{
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 4px;
+						height: 36px;
+						background: #C72327;
+						display: block;
+
+					}
+				}
+
+				p{
+					color:#777;
+					font: bold 11px $font_main;
+				}
+				> ul#fotos{
+					list-style: none;
+					padding: 0;
+					>li{
+						float: left;
+						display: inline;
+						width: 30%;
+						margin: 0 5% 5% 0;
+						&:nth-child(3n){
+							margin-right: 0;
+						}
+						
+
+					}
+
+				}
+				&.footer-widget--about{
+					a{
+					display: block;
+					width:60%;
+					}
+					p{
+						width: 75%;
+						margin: 20px 0 0;
+					}
+					
+				}
+			}
+		}
+	}
+}
